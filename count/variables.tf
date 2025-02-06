@@ -11,3 +11,11 @@ variable "domain_name" {
   default = "simplifysuccess.life"
   type    = string
 }
+
+variable "common_tags" {
+  type = map
+  default = {
+    project = "expense"
+    environment = "dev"
+  }
+}
