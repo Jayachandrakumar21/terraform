@@ -1,4 +1,4 @@
-resource "aws_instance" "server" {
+resource "aws_instance" "this" {
   ami                    = var.ami_id
   vpc_security_group_ids = [aws_security_group.Allow_tls.id]
   instance_type          = var.instance_type
