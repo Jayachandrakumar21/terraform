@@ -10,7 +10,7 @@ resource "aws_route53_record" "expense" {
 
 resource "aws_route53_record" "frontend" {
   zone_id = var.zone_id
-  name    = var.domain_name # interpolation 
+  name    = var.domain_name 
   type    = "A"
   ttl     = 1
   records = [aws_instance.expense[2].public_ip] #list type
