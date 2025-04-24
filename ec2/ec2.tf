@@ -1,11 +1,17 @@
+#created by : Jayachandra kumar
+
 resource "aws_instance" "server" {
   ami                    = "ami-09c813fb71547fc4f"
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
   instance_type          = "t2.micro"
 
   tags = {
+<<<<<<< HEAD
     # Name = "docker-demo"
     Name = "jenkins"
+=======
+    Name = "terraform-docker"
+>>>>>>> a7e6b90a14595d443027d52e76a5bbb7e6586af5
   }
 }
 
