@@ -6,12 +6,10 @@ resource "aws_instance" "server" {
   instance_type          = "t2.micro"
 
   tags = {
-<<<<<<< HEAD
     # Name = "docker-demo"
     Name = "jenkins"
-=======
+
     Name = "terraform-docker"
->>>>>>> a7e6b90a14595d443027d52e76a5bbb7e6586af5
   }
 }
 
