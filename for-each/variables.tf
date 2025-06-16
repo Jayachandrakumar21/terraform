@@ -1,8 +1,12 @@
-variable "instances" {
-  type    = list(string)
-  # default = ["mysql", "backend", "frontend"]
-  default = ["MASTER", "AGENT-1", "AGENT-2"]
+variable "instance" {
+  type = map
+  default = {
+    mysql = "t3.micro"
+    backend = "t2.micro"
+    frontend = "t2.micro"
+  }
 }
+
 
 variable "zone_id" {
   default = "Z07177463PULP3WHLJ3J9"

@@ -7,10 +7,11 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "rmt-tfst"
-    key = "expense-backend-infra" # you should have unique keys with in the bucket, sme keys should not be used in repos or tf projects
+    bucket = "expense-dev-tfstate"
+    key = "expense-dev-infra" # you should have unique keys with in the bucket, sme keys should not be used in repos or tf projects
     region = "us-east-1"
-    dynamodb_table = "state-locking"
+    encrypt = true
+    use_lockfile = true
 
   }
 }
