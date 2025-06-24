@@ -1,7 +1,7 @@
 variable "instances" {
   type    = list(string)
-  # default = ["mysql", "backend", "frontend"]
-  default = ["MASTER", "AGENT-1", "AGENT-2"]
+  default = ["mysql", "backend", "frontend"]
+  # default = ["MASTER", "AGENT-1", "AGENT-2"]
 }
 
 variable "zone_id" {
