@@ -7,7 +7,7 @@ resource "aws_instance" "server" {
 
   tags = {
     # Name = "docker-demo"
-    Name = "practice"
+    Name = "Demo"
 
     # Name = "terraform-docker"
   }
